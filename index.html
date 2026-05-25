@@ -1264,58 +1264,41 @@ Et nous avons récemment découvert les ateliers à l'occasion d'Halloween, les 
         <a href="https://maps.google.com/?q=62+Rue+de+Paris,+60400+Noyon" target="_blank" class="btn-itinerary interactive">Itinéraire</a>
       </div>
     </div>
-
   </div>
 </section>
 
 <!-- STREAMING_CHUNK: Setting up the reservation booking form -->
 <!-- RESERVATION SECTION -->
-<section id="reservation">
-  <div class="reservation-inner">
-    <div class="reveal">
-      <span class="section-tag">Une table pour vous ?</span>
-      <h2 class="section-title">Réserver ma Table</h2>
-      <p>Remplissez les informations ci-dessous pour réserver votre moment de douceur chez Lili and Broc.</p>
+<section id="reservation" class="section" style="padding: 6rem 1.5rem; text-align: center;">
+  <div class="container" style="max-width: 700px; margin: 0 auto;">
+    
+    <!-- L'encadré pro & aesthetic -->
+    <div class="resa-card reveal" style="background: rgba(255, 255, 255, 0.55); backdrop-filter: blur(15px); -webkit-backdrop-filter: blur(15px); border: 1px solid rgba(242, 181, 192, 0.4); border-radius: 24px; padding: 3.5rem 2.5rem; box-shadow: 0 15px 45px rgba(201, 123, 90, 0.08); position: relative; overflow: hidden;">
+      
+      <!-- Petite ligne décorative dégradée en haut de l'encadré -->
+      <div style="position: absolute; top: 0; left: 0; right: 0; height: 4px; background: linear-gradient(90deg, var(--rose), var(--terracotta), var(--lilas));"></div>
+
+      <span class="signature" style="font-family: 'Dancing Script', cursive; font-size: 1.6rem; color: var(--terracotta); display: block; margin-bottom: 0.5rem;">On vous attend</span>
+      
+      <h2 style="font-family: 'Playfair Display', serif; font-size: clamp(2.2rem, 4vw, 3.2rem); margin-bottom: 1rem;">
+        Réserver une <em style="font-style:italic; background: linear-gradient(135deg, var(--terracotta), var(--rose-deep)); -webkit-background-clip:text; background-clip:text; color:transparent;">table</em>
+      </h2>
+      
+      <p style="font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 1.25rem; color: var(--text-mid); max-width: 480px; margin: 1rem auto 2.5rem; line-height: 1.6;">
+        Appelez-nous, nous nous occupons de tout.
+      </p>
+      
+      <div class="hero-actions" style="display: flex; gap: 1.2rem; justify-content: center; flex-wrap: wrap;">
+        <a href="tel:0344962183" class="btn-primary interactive" style="padding: 1rem 2.2rem; background: linear-gradient(135deg, var(--terracotta), var(--rose-deep)); color: white; border: none; border-radius: 50px; font-family: 'DM Sans', sans-serif; font-size: 0.9rem; font-weight: 500; letter-spacing: 1.5px; text-transform: uppercase; text-decoration: none; box-shadow: 0 8px 25px rgba(201,123,90,0.3); transition: transform 0.25s, box-shadow 0.25s; display: inline-block;">
+           03 44 96 21 83
+        </a>
+        <a href="https://maps.google.com/?q=Atlantis+Noyon+ZAC+du+mont+renaud" target="_blank" rel="noopener" class="btn-ghost interactive" style="padding: 1rem 2.2rem; background: rgba(255,255,255,0.6); border: 1.5px solid var(--rose); color: var(--terracotta); border-radius: 50px; font-family: 'DM Sans', sans-serif; font-size: 0.9rem; font-weight: 500; letter-spacing: 1.5px; text-transform: uppercase; text-decoration: none; transition: transform 0.25s, background 0.25s; display: inline-block;">
+          Itinéraire
+        </a>
+      </div>
+
     </div>
-
-    <div class="form-card reveal">
-      <form id="reservationForm" onsubmit="handleReservation(event)">
-        <div class="form-row">
-          <div class="form-group">
-            <label>Votre Nom</label>
-            <input type="text" required placeholder="Ex. Julie Martin" class="interactive">
-          </div>
-          <div class="form-group">
-            <label>Téléphone</label>
-            <input type="tel" required placeholder="Ex. 06 12 34 56 78" class="interactive">
-          </div>
-        </div>
-
-        <div class="form-row">
-          <div class="form-group">
-            <label>Nombre d'invités</label>
-            <select class="interactive">
-              <option>1 Personne</option>
-              <option selected>2 Personnes</option>
-              <option>3 Personnes</option>
-              <option>4 Personnes</option>
-              <option>5 Personnes et plus</option>
-            </select>
-          </div>
-          <div class="form-group">
-            <label>Date & Heure souhaitées</label>
-            <input type="datetime-local" required class="interactive">
-          </div>
-        </div>
-
-        <div class="form-group">
-          <label>Une demande particulière ? (Optionnel)</label>
-          <textarea placeholder="Allergies, anniversaire, besoin de calme..." class="interactive"></textarea>
-        </div>
-
-        <button type="submit" class="form-submit interactive">Valider la réservation</button>
-      </form>
-    </div>
+    
   </div>
 </section>
 
@@ -1348,11 +1331,20 @@ Et nous avons récemment découvert les ateliers à l'occasion d'Halloween, les 
       <a href="#infos" class="interactive">Infos</a>
     </div>
 
-    <div class="footer-socials">
-      <a href="https://instagram.com" class="social-btn s-ig interactive" target="_blank"></a>
-      <a href="https://facebook.com" class="social-btn s-fb interactive" target="_blank"></a>
-      <a href="https://tiktok.com" class="social-btn s-tik interactive" target="_blank"></a>
-    </div>
+   <div class="footer-socials">
+  <a href="https://www.instagram.com/lili.and.broc/" class="social-btn s-ig interactive" target="_blank" aria-label="Instagram" style="display: flex; align-items: center; justify-content: center; background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%); border-radius: 50%; width: 40px; height: 40px;">
+    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+      <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+      <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+    </svg>
+  </a>
+  <a href="https://www.facebook.com/p/Lili-and-Broc-100086859855380/?locale=fr_FR" class="social-btn s-fb interactive" target="_blank" aria-label="Facebook" style="display: flex; align-items: center; justify-content: center; background: #1877F2; border-radius: 50%; width: 40px; height: 40px;">
+    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="white">
+      <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+    </svg>
+  </a>
+</div>
 
     <div class="footer-copy">
       &copy; 2026 Lili and Broc. Tous droits réservés. Design artistique & cosy.
